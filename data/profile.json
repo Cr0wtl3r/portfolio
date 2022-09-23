@@ -1,5 +1,7 @@
 {
+  "linkedin": "https://www.linkedin.com/in/albino-marques/",
   "name": "Albino M Santos",
+  "maps": "https://goo.gl/maps/kBp6ajPsGsLnGULk9",
   "photo": "https://avatars.githubusercontent.com/u/108479576?v=4",
   "job": "Junior Developer and Computer Technician",
   "location": "Serafina Corrêa - RS",
@@ -73,6 +75,11 @@
     {
       "name": "Design de Linktree",
       "url": "https://github.com/Albino-Marques/desafio-link-tree-rocketseat",
+      "github": true
+    },
+    {
+      "name": "Portfólio",
+      "url": "https://github.com/Albino-Marques/portfolio",
       "github": true
     }
   ],
