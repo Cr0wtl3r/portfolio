@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Albino M Santos</title>
+    <title>Meu Portfólio</title>
 
     <!-- Font Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Aberto+Sans:wght@400;700 & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -44,18 +44,18 @@
 <body>
     <main class="main">
         <header class="header">
-            <img src="assets/img/Perfil.jpg" alt="Imagem de perfil" class="photo">
+            <img src="data/imgs/my-photo.png" alt="Imagem de perfil" class="photo" id="profile.photo">
             <h1 class="title">Olá,
-                <br>eu sou Albino M Santos
+                <br>eu sou <span id="profile.name">Loading...</span>
             </h1>
             <div class="information">
-                <p class="job"><a href="https://www.linkedin.com/in/albino-marques/" target="_blank">Junior Developer
-                        and Computer
-                        Technician</a></p>
-                <p class="location"><a href="https://goo.gl/maps/kBp6ajPsGsLnGULk9" target="_blank">Serafina Corrêa -
-                        RS</a></p>
-                <p class="phone"><a href="tel:54-9-3618-1097">(54) 9 3618-1097</a></p>
-                <p class="email"><a href="mailto:albinomarques01@gmail.com">albinomarques01@gmail.com</a></p>
+                <p class="job"><a href="" target="_blank" id="profile.job">
+                        Loading...
+                    </a></p>
+                <p class="location"><a href="" target="_blank" id="profile.location">Loading...</a></p>
+                <p class="phone"><a href="tel:" id="profile.phone">Loading...</a>
+                </p>
+                <p class="email"><a href="mailto:" id="profile.email">Loading...</a></p>
             </div>
         </header>
 
@@ -68,48 +68,14 @@
                 <div class="skills">
                     <section class="tools">
                         <h3>Habilidades Profissionais:</h3>
-                        <ul>
-                            <li>
-                                <img src="assets/img/technologies/vscode.png" alt="VSCode" title="VSCode" />
-
-                            </li>
-                            <li>
-
-                                <img src="assets/img/technologies/javascript.png" alt="JavaScript" title="JavaScript" />
-
-                            </li>
-                            <li>
-
-                                <img src="assets/img/technologies/nodejs.png" alt="Node.JS" title="Node.JS" />
-
-                            </li>
-                            <li>
-
-                                <img src="assets/img/technologies/html.png" alt="HTML5" title="HTML5" />
-
-                            </li>
-                            <li>
-                                <img src="assets/img/technologies/css.png" alt="CSS3" title="CSS3">
-                            </li>
-                            <li>
-                                <img src="assets/img/technologies/python.png" alt="Python" title="Python">
-                            </li>
-                            <li>
-                                <img src="assets/img/technologies/git.png" alt="Git" title="Git">
-                            </li>
-                            <li>
-                                <img src="assets/img/technologies/github.png" alt="GitHub" title="GitHub">
-                            </li>
+                        <ul id="profile.skills.hardSkills">
+                            <li>Loading...</li>
                         </ul>
                     </section>
                     <section class="personal">
                         <h3>Habilidades Pessoais:</h3>
-                        <ul>
-                            <li>Liderança</li>
-                            <li>Facilidade de comunicação</li>
-                            <li>Organização</li>
-                            <li>Trabalho em Equipe</li>
-                            <li>Vontade</li>
+                        <ul id="profile.skills.softSkills">
+                            <li>Loading...</li>
                         </ul>
                     </section>
                 </div>
@@ -122,44 +88,19 @@
             </button>
 
             <div class="content">
-                <ul class="languages">
-                    <li>Português (BR) - Nativo</li>
-                    <li>Inglês - Básico</li>
-                    <li>Espanhol - Básico</li>
+                <ul class="languages" id="profile.languages">
+                    <li>Loading...</li>
                 </ul>
             </div>
         </section>
 
         <section class="acordeon ">
             <button class="trigger" type="button">
-                <h2>Projects</h2>
+                <h2>Portfólio</h2>
             </button>
 
             <div class="content">
-                <ul class="portfolio">
-                    <li>
-                        <h3 class="title github">Pokédex consumindo PokeAPI</h3>
-                        <a href="https://github.com/Albino-Marques/pokedex-js-dio" target="_blank">Link para o
-                            repositório no GitHub</a>
-                    </li>
-                    <li>
-                        <h3 class="title github">Clone da Netflix</h3>
-                        <a href="https://github.com/Albino-Marques/interface-da-netflix-clone" target="_blank">Link para
-                            o repositório
-                            no GitHub</a>
-                    </li>
-                    <li>
-                        <h3 class="title github">Design de Linktree</h3>
-                        <a href="https://github.com/Albino-Marques/desafio-link-tree-rocketseat" target="_blank">Link
-                            para o repositório
-                            no GitHub</a>
-                    </li>
-                    <li>
-                        <h3 class="title github">Portfólio</h3>
-                        <a href="https://github.com/Albino-Marques/portfolio" target="_blank">Link
-                            para o repositório
-                            no GitHub</a>
-                    </li>
+                <ul class="portfolio" id="profile.portfolio">
                 </ul>
             </div>
         </section>
@@ -170,40 +111,16 @@
             </button>
 
             <div class="content">
-                <ul class="experience">
-                    <li>
-                        <h3 class="title">Suporte Técnico / VIP Informática</h3>
-                        <p class="period">Mar 2022 - Current</p>
-                        <p>Realização serviços de técnico de informática para clientes finais. Suporte técnico
-                            empresarial, realizando o serviços de T.I das empresas parceiras, como manutenção, montagem,
-                            limpeza, formatação e configuração de computadores, bem como a manutenção e configuração de
-                            seus periféricos, como impressoras e afins. E suporte técnico especializado no sistema de
-                            gestão empresarial vendido pela equipe.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="title">Suporte Técnico Telefônico / Belluno Tecnologia</h3>
-                        <p class="period">Mai 2017 - Dez 2019</p>
-                        <p>Atendente de call center, recebendo chamadas de provedores de internet em todo o brasil e
-                            prestando suporte técnico de nível 1 bem como atendimento comercial e financeiro básico.
-                            Breve período (3 meses) como instrutor de atendimento (auxiliando os atendentes em suas
-                            funções) e experiência também com o setor de Redes (1 mês) auxiliando e prestando o suporte
-                            de nível 3 (suporte para redes de internet em geral com equipamento em maioria MIKROTIK)
-                            para os provedores de internet.</p>
-                    </li>
-                    <li>
-                        <h3 class="title">Instrutor de Informática - Estágio / Rede TC Caçapava do Sul</h3>
-                        <p class="period">Jun 2013 - Jun 2014</p>
-                        <p>Auxiliava alunos em seus cursos nos computadores, passava-lhes informação e ensinava-lhes do
-                            básico ao avançado em informática, S.O's Windows (7,8,8.1), pacote Microsoft Office entre
-                            outros cursos na área. Realizava a limpeza e manutenção dos equipamentos do polo.</p>
-                    </li>
+                <ul class="experience" id="profile.professionalExperience">
+
                 </ul>
             </div>
         </section>
     </main>
 
     <script src="assets/js/acordeon.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
