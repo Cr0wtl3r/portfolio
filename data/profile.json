@@ -11,6 +11,10 @@
   "skills": {
     "hardSkills": [
       {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/js.png"
+      },
+      {
         "name": "Nodejs",
         "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/nodejs.png"
       },
@@ -25,10 +29,6 @@
       {
         "name": "Python",
         "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/python.png"
-      },
-      {
-        "name": "JavaScript",
-        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/js.png"
       },
       {
         "name": "HTML5",
