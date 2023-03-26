@@ -11,6 +11,10 @@
   "skills": {
     "hardSkills": [
       {
+        "name": "Python",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/python.png"
+      },
+      {
         "name": "JavaScript",
         "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/js.png"
       },
@@ -19,20 +23,44 @@
         "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/nodejs.png"
       },
       {
+        "name": "VueJS",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/vuejs.png"
+      },
+      {
         "name": "CSS3",
         "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/css.png"
       },
       {
-        "name": "Visual Studio Code",
-        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/vscode.png"
+        "name": "Sass",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/sass.png"
       },
       {
-        "name": "Python",
-        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/python.png"
+        "name": "Bootstrap",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/bootstrap.png"
       },
       {
         "name": "HTML5",
         "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/html.png"
+      },
+      {
+        "name": "Java",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/java.png"
+      },
+      {
+        "name": "Spring",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/spring.png"
+      },
+      {
+        "name": "MongoDB",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/mongodb.png"
+      },
+      {
+        "name": "MySQL",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/mysql.png"
+      },
+      {
+        "name": "Visual Studio Code",
+        "logo": "https://raw.githubusercontent.com/Albino-Marques/portfolio/main/data/imgs/vscode.png"
       },
       {
         "name": "GitHub",
@@ -63,6 +91,26 @@
   ],
   "portfolio": [
     {
+      "name": "Hotel DEVaneio - Front-End",
+      "url": "https://github.com/TexpertsG3/Hotel-DEVaneio",
+      "github": true
+    },
+    {
+      "name": "Hotel DEVaneio - Back-End",
+      "url": "https://github.com/TexpertsG3/devaneio",
+      "github": true
+    },
+    {
+      "name": "Ecoleta",
+      "url": "https://github.com/Albino-Marques/Ecoleta",
+      "github": true
+    },
+    {
+      "name": "Projetos práticos - WIP (Em andamento)",
+      "url": "https://github.com/Albino-Marques/Projetos-Praticos",
+      "github": true
+    },
+    {
       "name": "Pokédex consumindo PokeAPI",
       "url": "https://github.com/Albino-Marques/pokedex-js-dio",
       "github": true
@@ -88,6 +136,11 @@
       "name": "Suporte Técnico / VIP Informática",
       "period": "2022 - Current",
       "description": "Realização serviços de técnico de informática para clientes finais. Suporte técnico empresarial, realizando o serviços de T.I das empresas parceiras, como manutenção, montagem, limpeza, formatação e configuração de computadores, bem como a manutenção e configuração de seus periféricos, como impressoras e afins. E suporte técnico especializado no sistema de gestão empresarial vendido pela equipe."
+    },
+    {
+      "name": "Dio Campus Expert / Digital Innovation One",
+      "period": "07/2022 - 09/2022",
+      "description": "Experiência de “colaborador voluntário” em que representava minha instituição de ensino na DIO, onde tive várias live/aulas com inúmeras ﬁguras do meio Tech sobre o mercado de T.I e suas vertentes, bem como orientações sobre como ser alguém no meio Tech."
     },
     {
       "name": "Suporte Técnico Telefônico / Belluno Tecnologia",
