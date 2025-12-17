@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+    --font-mono: 'JetBrains Mono', monospace;
+    --color-red-team-bg: #050000;
+    --color-red-team-primary: #b91c1c;
+    /* red-700 */
+    --color-red-team-dim: #450a0a;
+    /* red-950 */
+}
+
+/* Custom hacker styles */
+body {
+    background-color: #050000;
+    color: #e5e7eb;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+}
+
+/* CRT Scanline effect */
+.scanlines::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 50;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #450a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7f1d1d;
+}
+
+/* Utilities */
+.text-terminal-red {
+    color: #ef4444;
+    text-shadow: 0 0 5px rgba(239, 68, 68, 0.5);
+}
