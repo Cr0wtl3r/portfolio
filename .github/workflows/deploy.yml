@@ -39,9 +39,6 @@ jobs:
 
       - name: Build with Nuxt
         run: npm run generate
-        env:
-          NITRO_PRESET: github_pages
-          NUXT_APP_BASE_URL: /portfolio/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
