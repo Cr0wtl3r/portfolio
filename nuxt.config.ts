@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   srcDir: 'app',
+  ssr: false,
 
   vite: {
     plugins: [
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
   ],
 
   app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'Cr0wtl3r | Offensive Security Portfolio',
       meta: [

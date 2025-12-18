@@ -40,9 +40,8 @@ jobs:
       - name: Build with Nuxt
         run: npm run generate
         env:
-          # This helps Nuxt/Nitro know it's being built for GH Pages if needed, 
-          # though 'npm run generate' usually defaults to static.
           NITRO_PRESET: github_pages
+          NUXT_APP_BASE_URL: /portfolio/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
