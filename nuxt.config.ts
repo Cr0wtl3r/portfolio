@@ -6,6 +6,14 @@ export default defineNuxtConfig({
   srcDir: 'app',
   ssr: false,
 
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+    },
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
