@@ -21,7 +21,6 @@ const { content } = useContent()
     </div>
   </div>
 
-  <!-- Certifications sub-section -->
   <div class="mt-12">
       <h3 class="text-lg font-bold mb-6 text-red-700 uppercase tracking-wider border-b border-red-900/10 pb-2">Certifications & Education</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

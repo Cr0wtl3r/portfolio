@@ -1,9 +1,27 @@
-export const useGithub = () => {
-    const profile = ref<any>(null)
-    const repos = ref<any[]>([])
+export interface GithubProfile {
+    name: string
+    login: string
+    bio: string | null
+    avatar_url: string
+    html_url: string
+}
 
-    // Hardcoded fallback for profile if API fails or rate limited
-    const fallbackProfile = {
+export interface GithubRepo {
+    id: number
+    name: string
+    description: string | null
+    html_url: string
+    language: string | null
+    stargazers_count: number
+    forks_count: number
+    fork: boolean
+}
+
+export const useGithub = () => {
+    const profile = ref<GithubProfile | null>(null)
+    const repos = ref<GithubRepo[]>([])
+
+    const fallbackProfile: GithubProfile = {
         name: 'Albino M. Santos',
         login: 'Cr0wtl3r',
         bio: 'Offensive Security | Pentest | IAM',
@@ -13,7 +31,7 @@ export const useGithub = () => {
 
     const fetchProfile = async () => {
         try {
-            const { data, error } = await useFetch('https://api.github.com/users/cr0wtl3r')
+            const { data, error } = await useFetch<GithubProfile>('https://api.github.com/users/cr0wtl3r')
             if (error.value || !data.value) {
                 profile.value = fallbackProfile
             } else {
@@ -27,11 +45,11 @@ export const useGithub = () => {
 
     const fetchRepos = async () => {
         try {
-            const { data, error } = await useFetch('https://api.github.com/users/cr0wtl3r/repos?sort=updated&per_page=7')
+            const { data, error } = await useFetch<GithubRepo[]>('https://api.github.com/users/cr0wtl3r/repos?sort=updated&per_page=8')
             if (error.value || !data.value) {
                 repos.value = []
             } else {
-                repos.value = (data.value as any[]).filter(r => !r.fork).slice(0, 8) // Filter forks, take top 6
+                repos.value = data.value.filter(r => !r.fork).slice(0, 8)
             }
         } catch (e) {
             console.error("Github Repos Fetch Error", e)

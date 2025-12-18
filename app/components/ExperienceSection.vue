@@ -6,7 +6,6 @@ const { content } = useContent()
 <template>
   <div class="space-y-12 relative pl-3 md:pl-6 border-l border-red-900/20 ml-2 md:ml-4">
     <div v-for="(exp, i) in content.experience" :key="i" class="relative pl-8 md:pl-10 group">
-        <!-- Timeline Dot -->
         <span class="absolute -left-[7px] top-2 w-3.5 h-3.5 bg-red-team-bg border-2 border-red-900 rounded-full group-hover:bg-red-900 transition-colors duration-300 shadow-[0_0_5px_rgba(185,28,28,0.5)]"></span>
         
         <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">

@@ -6,7 +6,6 @@ import { ExternalLink, Star, GitFork, BookOpen } from 'lucide-vue-next'
 const { content } = useContent()
 const { repos, fetchRepos } = useGithub()
 
-// Ensure we fetch on mount
 onMounted(() => {
     fetchRepos()
 })
@@ -20,7 +19,6 @@ onMounted(() => {
         <div v-for="repo in repos" :key="repo.id" 
             class="group bg-[#0a0a0a] border border-red-900/20 p-6 rounded-sm hover:border-red-700/60 transition-all duration-300 flex flex-col h-full relative overflow-hidden shadow-sm hover:shadow-[0_0_15px_rgba(127,29,29,0.15)]"
         >
-            <!-- Hover effect overlay -->
             <div class="absolute inset-0 bg-linear-to-br from-transparent to-red-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
             <div class="flex justify-between items-start mb-3 relative z-10">

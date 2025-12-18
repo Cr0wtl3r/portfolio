@@ -4,12 +4,9 @@
     --font-mono: 'JetBrains Mono', monospace;
     --color-red-team-bg: #050000;
     --color-red-team-primary: #b91c1c;
-    /* red-700 */
     --color-red-team-dim: #450a0a;
-    /* red-950 */
 }
 
-/* Custom hacker styles */
 body {
     background-color: #050000;
     color: #e5e7eb;
@@ -17,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* CRT Scanline effect */
 .scanlines::before {
     content: " ";
     display: block;
@@ -32,7 +28,6 @@ body {
     pointer-events: none;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -49,7 +44,6 @@ body {
     background: #7f1d1d;
 }
 
-/* Utilities */
 .text-terminal-red {
     color: #ef4444;
     text-shadow: 0 0 5px rgba(239, 68, 68, 0.5);

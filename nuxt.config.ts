@@ -1,12 +1,9 @@
 import tailwindcss from '@tailwindcss/vite'
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   srcDir: 'app',
-
-
 
   vite: {
     plugins: [
@@ -25,6 +22,13 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Portfolio of Albino M. Santos (Cr0wtl3r) - Offensive Security, Pentest, IAM' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'Cr0wtl3r | Offensive Security Portfolio' },
+        { property: 'og:description', content: 'Pentester Jr | Red Team Operator | Bug Hunter | Tool Developer' },
+        { property: 'og:image', content: 'https://avatars.githubusercontent.com/u/108479576?v=4' },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: 'Cr0wtl3r | Offensive Security Portfolio' },
+        { name: 'twitter:description', content: 'Pentester Jr | Red Team Operator | Bug Hunter | Tool Developer' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

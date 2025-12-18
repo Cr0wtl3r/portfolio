@@ -48,7 +48,7 @@ export const usePdfExport = () => {
         doc.setFontSize(12)
         doc.setFont('helvetica', 'normal')
         doc.setTextColor('#444444')
-        const subtitle = currentLang.value === 'pt' ? 'Junior Pentester | Red Team Operator' : 'Junior Pentester | Red Team Operator'
+        const subtitle = 'Junior Pentester | Red Team Operator'
         doc.text(subtitle, margin, y)
         y += 10
 

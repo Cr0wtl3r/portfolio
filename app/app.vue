@@ -19,13 +19,12 @@ const handleNavigate = (id: string) => {
     }
 }
 
-// Simple Intersection Observer to update current section on scroll
 let observer: IntersectionObserver | null = null
 
 onMounted(() => {
     const options = {
         root: null,
-        rootMargin: '-50% 0px -50% 0px', // Active when element is in middle of screen
+        rootMargin: '-50% 0px -50% 0px',
         threshold: 0
     }
     
@@ -49,7 +48,6 @@ onUnmounted(() => {
 
 <template>
   <div class="min-h-screen bg-red-team-bg text-gray-300 font-mono selection:bg-red-900/30 selection:text-white pb-20">
-    <!-- Scanlines overlay -->
     <div class="scanlines fixed inset-0 z-50 pointer-events-none opacity-20"></div>
 
     <AppHeader :current-section="currentSection" @navigate="handleNavigate" />
