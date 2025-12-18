@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   ],
 
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: process.env.CI ? '/portfolio/' : '/',
     head: {
       title: 'Cr0wtl3r | Offensive Security Portfolio',
       meta: [
