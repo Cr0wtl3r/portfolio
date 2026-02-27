@@ -89,7 +89,7 @@ export const useContent = () => {
                 }
             ],
             certifications: [
-                "CRTA (Certified Red Team Analyst) - CyberWarFare Labs (In Progress)",
+                "CRTA (Certified Red Team Analyst) - CyberWarFare Labs",
                 "CWHI (Crowsec Web Hacking Initial) - HackingClub",
                 "Cisco CyberOps Associate - Cybersecurity Operations",
                 "Introdução ao Pentest na Prática - DESEC Security",
@@ -191,7 +191,7 @@ export const useContent = () => {
                 }
             ],
             certifications: [
-                "CRTA (Certified Red Team Analyst) - CyberWarFare Labs (Em andamento)",
+                "CRTA (Certified Red Team Analyst) - CyberWarFare Labs",
                 "CWHI (Crowsec Web Hacking Initial) - HackingClub",
                 "Cisco CyberOps Associate - Operações de Cibersegurança",
                 "Introdução ao Pentest na Prática - DESEC Security",
